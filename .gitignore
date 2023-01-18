@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+issues/
+github_token.txt

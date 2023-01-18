@@ -1,0 +1,27 @@
+# Check CUDA version required for desired PyTorch version:
+https://pytorch.org/get-started
+
+# Get matching version
+https://developer.nvidia.com/cuda-toolkit-archive
+
+# Check CUDA version (supported):
+# CUDA version that the current driver supports:
+nvidia-smi
+# Installed CUDA compiler version:
+nvcc --version
+
+# Get conda install script from PyTorch page
+https://pytorch.org/get-started
+
+# Install GPU torch:
+(conda env remove -n HuggingFace)
+conda create -n HuggingFace python=3.10
+conda activate HuggingFace
+(conda install pytorch torchvision pytorch-cuda=11.7 -c pytorch -c nvidia)
+* Verify that the python pytorch-cuda package will be installed before proceeding! If it's not in the list, it won't have CUDA support *
+
+# Verify in python:
+torch.version.cuda
+torch.cuda.is_available()
+
+# https://medium.com/analytics-vidhya/4-steps-to-install-anaconda-and-pytorch-onwindows-10-5c9cb0c80dfe
