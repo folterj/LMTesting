@@ -1,2 +1,2 @@
 conda activate HuggingFace
-accelerate launch train_tokenizer_loop_accelerate.py
+accelerate launch src/train_tokenizer_loop_accelerate.py

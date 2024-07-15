@@ -1,0 +1,15 @@
+name: hf_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch-cuda
+  - torchvision
+  - transformers
+  - numpy
+  - pandas
+  - tqdm
+  - pip
