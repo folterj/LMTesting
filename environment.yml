@@ -9,7 +9,11 @@ dependencies:
   - pytorch-cuda
   - torchvision
   - transformers
+  - evaluate
+  - accelerate
   - numpy
   - pandas
   - tqdm
   - pip
+  - pip:
+    - rouge_score
